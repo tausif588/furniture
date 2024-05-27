@@ -33,14 +33,15 @@
     <div id="popupForm" class="modal popupForm">
         <div class="modal-content">
             <span class="closeBtn">&times;</span>
-            <form  action="https://formsubmit.co/82fa3e17b1af65173f1f567607680ac8" method="POST">
+            <form  action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="bcd607ed-954b-49ad-b048-64e4547239a2">
                 <h2>Order Your Furniture</h2>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="Name" required>
+                <input type="text" id="name" name="Name" autocomplete="off" required>
                 <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="Phone" required>
+                <input type="text" id="phone" name="Phone" autocomplete="off" required>
                 <label for="enquiry">Enter Enquiry</label>
-                <textarea type="text" id="enquiry" name="Message" rows="4"></textarea>
+                <textarea type="text" id="enquiry" name="Message" rows="4" autocomplete="off" required></textarea>
                 <button class="w-100 mt-3" type="submit">Submit</button>
             </form>
         </div>
@@ -113,7 +114,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-12 contact-form-img">
+                <div class="col-lg-6 col-md-6 col-12 mt-5 mt-md-0 contact-form-img order-2 order-md-1">
                     <h5 style="margin-left: 60px;margin-bottom: 10px;font-weight: 600; font-size: 20px;">Main Branch</h5>
                     <div class="d-flex align-items-start">
                         <div class="">
@@ -157,16 +158,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mt-5 mt-md-0 col-12">
-                    <form action="https://formsubmit.co/82fa3e17b1af65173f1f567607680ac8" method="POST" class="contact-form">
+                <div class="col-lg-6 col-md-6  col-12 order-1 order-md-2">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="bcd607ed-954b-49ad-b048-64e4547239a2">
                         <h3 class="mb-0">Get Our Latest Catalogue</h3>
-                        <p>Recive it on whtasapp. Provide a valid number.</p>
+                        <p>Receive it on WhatsApp. Provide a valid number</p>
                         <div class="marg-top20 mt-3">
                             <div class="">
                                 <div>
                                     <div class="form-div text-center">
                                         <input type="text" class="form-control form-input" id="name"
-                                            placeholder="Name" name="Name" required>
+                                            placeholder="Name" name="Name" autocomplete="off" required>
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +189,7 @@
                         <div class="form-div marg-top30">
 
                             <textarea class="form-control form-comment-height form-message " rows="2"
-                                placeholder="Enter Enquiry" id="comment" name="Message" ></textarea>
+                                placeholder="Enter Enquiry" id="comment" name="Message" autocomplete="off" required></textarea>
                         </div>
                         <div class="padding-top30 text-align">
                             <button class="boxed-btn" type="submit">SUBMIT</button>
@@ -816,6 +818,8 @@
 });
 
     </script>
+   
+        
 </body>
 
 </html>
