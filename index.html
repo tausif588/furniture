@@ -28,6 +28,31 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="100">
+
+    <!-- Start Popup -->
+    <div id="popupForm" class="modal popupForm">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <form  action="https://formsubmit.co/82fa3e17b1af65173f1f567607680ac8" method="POST">
+                <h2>Order Your Furniture</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="Phone" required>
+                <label for="enquiry">Enter Enquiry</label>
+                <textarea type="text" id="enquiry" name="Message" rows="4"></textarea>
+                <button class="w-100 mt-3" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="thankYouMessage" class="modal">
+        <div class="modal-content">
+            <h2>Thank you for your submission!</h2>
+        </div>
+    </div>
+    <!-- End Popup -->
+
+
     <div id="return-to-top"><i class="fa fa-angle-up"></i>
     </div>
     <!--====================== NAVIGATION START =================================-->
@@ -53,7 +78,8 @@
                                 class="fa-brands fa-instagram menu-icon1"></i></a>
                     </li>
                     <li class="safari-menu">
-                        <a href="#" class="boxed-btn boxed-btn-1">Shop Now</a>
+        
+                        <button  class="glow-on-hover openFormBtn" type="button">Shop Now!</button>
                     </li>
                 </ul>
             </div>
@@ -73,7 +99,7 @@
                             <h1 class="padding-bottom30">Season Off Sale - Up to 35% Off!</h1>
 
                             <div>
-                                <a href="#" class="boxed-btn">Shop the Sale</a>
+                                <button  type="button" class="boxed-btn openFormBtn">Shop the Sale</button>
                             </div>
                         </div>
                     </div>
@@ -82,17 +108,273 @@
         </div>
     </header>
     <!--==================================== HEADER AREA END===================================-->
+      <!--====================== FORM START ==================================-->
+      <section class="section-space section-white-bg" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12 contact-form-img">
+                    <h5 style="margin-left: 60px;margin-bottom: 10px;font-weight: 600; font-size: 20px;">Main Branch</h5>
+                    <div class="d-flex align-items-start">
+                        <div class="">
+                            <img src="images/100x100x1.png" alt="750x500" style="width: 20px;height: 20px;" >
+                        </div>
+                        <div class="display-table-cell contact-details">
+                            <a target="_blank" href="https://maps.app.goo.gl/gvP8JaYhV6zRAa7B8">Lucknow - Faizabad Rd, Ismailganj, Kamta, Lucknow, Uttar Pradesh 226010</a>
+                        </div>
+                    </div>
+                    <h5 class="mt-3" style="margin-left: 60px;margin-bottom: 10px;font-weight: 600; font-size: 20px;">Our Branches</h5>
+                    <div class="d-flex align-items-start">
+                        <div class="">
+                            <img src="images/100x100x1.png" alt="750x500" style="width: 20px;height: 20px;" >
+                        </div>
+                        <div class="display-table-cell contact-details">
+                            <a href="https://maps.app.goo.gl/Sfup3jnYBiczsZ8S8" target="_blank" >1.VIP Rd, near HP Petrol Pump, Sneh Nagar, Muslim Nagar, Alambagh, Lucknow, Uttar Pradesh 226005</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mt-3">
+                        <div class="">
+                            <img src="images/100x100x1.png" alt="750x500" style="width: 20px;height: 20px;" >
+                        </div>
+                        <div class="display-table-cell contact-details">
+                            <a href="https://maps.app.goo.gl/eiZbQguZSWHpjojg6" target="_blank" >2.ASHRAM BAZAR, DISTRICT HOSPITAL ROAD, near SS COLLAGE, Shahjahanpur, Uttar Pradesh 242001</a>
+                        </div>
+                    </div>
+                    <div class="display-table mt-3">
+                        <div >
+                            <img src="images/internet.png" alt="750x500" style="width: 20px;height: 20px;">
+                        </div>
+                        <div class="display-table-cell contact-details">
+                            <a href="https://www.attarifurniture.in/" target="_blank">www.attarifurniture.in</a>
+                        </div>
+                    </div>
+                    <div class="display-table mt-3">
+                        <div class="">
+                            <img src="images/100x100x3.png" alt="750x500" style="width: 20px;height: 20px;">
+                        </div>
+                        <div class="display-table-cell contact-details">
+                            <a href="tel:9695291744">+91-9695291744</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-5 mt-md-0 col-12">
+                    <form action="https://formsubmit.co/82fa3e17b1af65173f1f567607680ac8" method="POST" class="contact-form">
+                        <h3 class="mb-0">Get Our Latest Catalogue</h3>
+                        <p>Recive it on whtasapp. Provide a valid number.</p>
+                        <div class="marg-top20 mt-3">
+                            <div class="">
+                                <div>
+                                    <div class="form-div text-center">
+                                        <input type="text" class="form-control form-input" id="name"
+                                            placeholder="Name" name="Name" required>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <div class="form-div">
+                                    <input type="text" class="form-control form-input number-css"
+                                        placeholder="Phone Number" name="Phone" id="phonenumber" autocomplete="off"
+                                        required />
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-div marg-top30">
+
+                            <textarea class="form-control form-comment-height form-message " rows="2"
+                                placeholder="Enter Enquiry" id="comment" name="Message" ></textarea>
+                        </div>
+                        <div class="padding-top30 text-align">
+                            <button class="boxed-btn" type="submit">SUBMIT</button>
+                        </div>
+
+                        <div class="messageDiv text-center"> <span class="successMessage"> </span> <span
+                                class="failMessage"> </span> </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--============================= FORM END ===========================================-->
+    <!-- <section class="section-space section-gray-bg" id="popular">
+
+        <div class="container">
+            <div id="my_carousel_2" class="owl-carousel owl-theme">
+                <div class="item h-100 l">
+                    <div class="card h-100 custom-card">
+                        <div class="profile">
+                            <img src="./images/user.png" alt="">
+                        </div>
+                        <div class="name mt-1">
+                            <h2>deependra jani</h2>
+                        </div>
+                        <div class="star mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content mt-2">
+                            Good Luxury Furniture Range. Sofa & Bed collection is interesting. Price range is affordable
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100 l">
+                    <div class="card h-100 custom-card">
+                        <div class="profile">
+                            <img src="./images/user.png" alt="">
+                        </div>
+                        <div class="name mt-1">
+                            <h2>Mohammad Iqbal</h2>
+                        </div>
+                        <div class="star mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content mt-2 ">
+                            The Attari furniture is very nice and sturdy in terms of money and quality. I highly recommend you to go and check out their amazing collection.
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100 l">
+                    <div class="card h-100 custom-card">
+                        <div class="profile">
+                            <img src="./images/user.png" alt="">
+                        </div>
+                        <div class="name mt-1">
+                            <h2>SURAKSHA PRASAD</h2>
+                        </div>
+                        <div class="star mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content mt-2 ">
+                            I ordered a bed and a wardrobe from Attari Furniture and both of my finished products are so good just the way I wanted and at a very decent price. I would highly recommend.
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100 l">
+                    <div class="card h-100 custom-card">
+                        <div class="profile">
+                            <img src="./images/user.png" alt="">
+                        </div>
+                        <div class="name mt-1">
+                            <h2>Alok kumar singh</h2>
+                        </div>
+                        <div class="star mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content mt-2 ">
+                            First of all very Priceworthy goods,Really good collectionOne Must visit them for sure before purchasing any furniture from any other place.
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="card h-100 custom-card">
+                        <div class="profile">
+                            <img src="./images/user.png" alt="">
+                        </div>
+                        <div class="name mt-1">
+                            <h2>Eklavya Yadav</h2>
+                        </div>
+                        <div class="star mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="content mt-2 ">
+                            The furniture showroom had a wide variety of stylish and high-quality furniture pieces on display. The showroom was well-organized and clean, making it easy to browse through the different options. The staff was friendly and knowledgeable, providing helpful recommendations and answering any questions I had. Overall, it was a great shopping experience and I would definitely recommend this furniture showroom to others looking for new pieces for their home.
+                        </div>
+                    </div>
+                </div>
+               
+
+
+            </div>
+        </div>
+    </section> -->
     <!--====================== TWO COLUMN START ==================================-->
-    <section class="section-space explore section-gray-bg" id="popular">
+    <!-- <section class="section-space explore section-gray-bg" id="popular">
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12  res-padding-bottom30">
-                    <h3 class="padding-bottom15 text-center">Explore Our Sale Selections <span>Today!</span> </h3>
+               
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                  
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                 
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                   
                 </div>
                 <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
                     <div class="item-box">
-                        <img src="./images/item1.jpg" alt="">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item12.jpg" alt="">
+                        <div class="content">
+                            <span class="title">BED</span>
+                            <p class="name">SOFA CORNER CHESTER</p>
+                            <div class="price">
+                                <del class="croess">₹52,799.00</del>
+                                <span class="red">₹48,399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section> -->
+    <section class="section-space explore  section-gray-bg" id="popular">
+
+        <div class="container">
+            <div class="col-sm-12  res-padding-bottom30">
+                <h3 class="padding-bottom15 text-center">Explore Our Sale Selections <span>Today!</span> </h3>
+            </div>
+            <div id="my_carousel_2" class="owl-carousel owl-theme mt-3">
+                <div class="item h-100">
+                    <div  class="item-box ">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item1.jpg" alt="">
                         <div class="content">
                             <span class="title">Side Table</span>
                             <p class="name">Bed Side Table</p>
@@ -103,9 +385,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="item h-100">
                     <div class="item-box">
-                        <img src="./images/item2.jpg" alt="">
+                        
+                        <img role="button" type="button" class="openFormBtn" src="./images/item2.jpg" alt="">
                         <div class="content">
                             <span class="title">Side Table</span>
                             <p class="name">Puffy Stool</p>
@@ -116,22 +399,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="item h-100">
                     <div class="item-box">
-                        <img src="./images/item3.jpg" alt="">
-                        <div class="content">
-                            <span class="title">SOFA</span>
-                            <p class="name">PUFFY STOOL</p>
-                            <div class="price">
-                                <del class="croess">₹5,799.00 </del>
-                                <span class="red">₹3,499.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
-                    <div class="item-box">
-                        <img src="./images/item4.jpg" alt="">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item4.jpg" alt="">
                         <div class="content">
                             <span class="title">Side Table</span>
                             <p class="name">SIDE TABLE UV</p>
@@ -142,9 +412,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="item h-100">
                     <div class="item-box">
-                        <img src="./images/item5.jpg" alt="">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item5.jpg" alt="">
                         <div class="content">
                             <span class="title">CORNER STAND</span>
                             <p class="name">CORNER STAND-01</p>
@@ -155,9 +425,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="item h-100">
                     <div class="item-box">
-                        <img src="./images/item6.jpg" alt="">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item6.jpg" alt="">
                         <div class="content">
                             <span class="title">CORNER STAND</span>
                             <p class="name">CORNER STAND-02</p>
@@ -168,9 +438,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+
+                <div class="item h-100">
                     <div class="item-box">
-                        <img src="./images/item7.jpg" alt="">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item7.jpg" alt="">
                         <div class="content">
                             <span class="title">SHOE RACK</span>
                             <p class="name">Shoe Rack</p>
@@ -181,12 +452,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-3 mt-3">
+                <div class="item h-100">
                     <div class="item-box">
-                        <img src="./images/item8.jpg" alt="">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item8.jpg" alt="">
                         <div class="content">
                             <span class="title">STUDY TABLE</span>
-                            <p class="name">Study Table/p>
+                            <p class="name">Study Table </p>
                             <div class="price">
                                 <del class="croess">₹12,490.00</del>
                                 <span class="red">₹4,999.00</span>
@@ -194,11 +465,64 @@
                         </div>
                     </div>
                 </div>
+                <div class="item h-100">
+                    <div class="item-box">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item9.jpg" alt="">
+                        <div class="content">
+                            <span class="title">BED</span>
+                            <p class="name">L SHAPE CORNER BED WITH STORAGE</p>
+                            <div class="price">
+                                <del class="croess">₹48,799.00</del>
+                                <span class="red">₹45,499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="item-box">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item10.jpg" alt="">
+                        <div class="content">
+                            <span class="title">BED</span>
+                            <p class="name">L SHAPE CORNER WITH STORAGE</p>
+                            <div class="price">
+                                <del class="croess">₹48,799.00</del>
+                                <span class="red">₹45,499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="item-box">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item11.jpg" alt="">
+                        <div class="content">
+                            <span class="title">BED</span>
+                            <p class="name">SOFA CORNER 10 SEATER</p>
+                            <div class="price">
+                                <del class="croess">₹84,799.00</del>
+                                <span class="red">₹78,799.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item h-100">
+                    <div class="item-box">
+                        <img role="button" type="button" class="openFormBtn" src="./images/item12.jpg" alt="">
+                        <div class="content">
+                            <span class="title">BED</span>
+                            <p class="name">SOFA CORNER CHESTER</p>
+                            <div class="price">
+                                <del class="croess">₹52,799.00</del>
+                                <span class="red">₹48,399.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                
+
+
             </div>
         </div>
     </section>
-
     <!--============================= TWO COLUMN END ===========================================-->
     <!--========================= PRODUCT START======================================-->
     <section class="section-space section-white-bg">
@@ -367,83 +691,7 @@
     </section>
     <!--====================== TESTIMONIAL END ==================================-->
 
-    <!--====================== FORM START ==================================-->
-    <section class="section-space section-white-bg" id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-12 contact-form-img">
-                    <div class="d-flex align-items-start padding-bottom70">
-                        <div class="">
-                            <img src="images/100x100x1.png" alt="750x500" style="width: 40px;height: 40px;"  class="img-fluid">
-                        </div>
-                        <div class="display-table-cell contact-details">
-                            <p>Lucknow - Faizabad Rd, Ismailganj, Kamta, Lucknow, Uttar Pradesh 226010</p>
-                        </div>
-                    </div>
-                    <div class="display-table padding-bottom70">
-                        <div >
-                            <img src="images/internet.png" alt="750x500" style="width: 40px;height: 40px;" class="img-fluid">
-                        </div>
-                        <div class="display-table-cell contact-details">
-                            <p>www.attarifurniture.in</p>
-                        </div>
-                    </div>
-                    <div class="display-table">
-                        <div class="">
-                            <img src="images/100x100x3.png" alt="750x500" style="width: 40px;height: 40px;" class="img-fluid">
-                        </div>
-                        <div class="display-table-cell contact-details">
-                            <p>+91-9695291744</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mt-5 mt-md-0 col-12">
-                    <form action="https://formsubmit.co/82fa3e17b1af65173f1f567607680ac8" method="POST" class="contact-form">
-                        <h3 class="padding-bottom20 ">Order Your Furniture</h3>
-                        <div class="marg-top20">
-                            <div class="">
-                                <div>
-                                    <div class="form-div text-center">
-                                        <input type="text" class="form-control form-input" id="name"
-                                            placeholder="Name" name="Name" required>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div class="">
-                            <div class="">
-                                <div class="form-div">
-                                    <input type="text" class="form-control form-input number-css"
-                                        placeholder="Phone Number" name="Phone" id="phonenumber" autocomplete="off"
-                                        required />
-
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="form-div marg-top30">
-
-                            <textarea class="form-control form-comment-height form-message " rows="2"
-                                placeholder="Enter Enquiry" id="comment" name="Message" required></textarea>
-                        </div>
-                        <div class="padding-top30 text-align">
-                            <button class="boxed-btn" type="submit">SUBMIT</button>
-                        </div>
-
-                        <div class="messageDiv text-center"> <span class="successMessage"> </span> <span
-                                class="failMessage"> </span> </div>
-
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!--============================= FORM END ===========================================-->
+  
 
     <!--============================= FOOTER AREA START ===========================================-->
     <section class="footer-area">
@@ -467,7 +715,7 @@
                                
                            </div>
                            <div class="social-footer mt-3">
-                            <a href="https://wa.me/9695291744">
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=9695291744">
                                 <i class="fa-brands fa-whatsapp menu-icon"></i>
                             </a>
                             <a href="https://www.instagram.com/attarifurniture_ind?igsh=ZDd1N3pqZDhzNWt0">
@@ -481,9 +729,11 @@
                            </div>
                         </div>
                         <div class="branches">
-                            <h5 class="text-white fw-bold text-center">Our Branches</h5>
-                            <p class="text-white mt-3">VIP Rd, near HP Petrol Pump, Sneh Nagar, Muslim Nagar, Alambagh, Lucknow, Uttar Pradesh 226005</p>
-                            <p class="text-white mt-2">ASHRAM BAZAR, DISTRICT HOSPITAL ROAD, near SS COLLAGE, Shahjahanpur, Uttar Pradesh 242001</p>
+                            <h5 class="text-white fw-bold text-center">Main Branch</h5>
+                            <a href="https://maps.app.goo.gl/gvP8JaYhV6zRAa7B8" target="_blank" class="text-white mt-2">Lucknow - Faizabad Rd, Ismailganj, Kamta, Lucknow, Uttar Pradesh 226010</a>
+                            <h5 class="text-white fw-bold text-center mt-3">Our Branches</h5>
+                            <a href="https://maps.app.goo.gl/Sfup3jnYBiczsZ8S8" target="_blank" class="text-white mt-2 d-block">1.VIP Rd, near HP Petrol Pump, Sneh Nagar, Muslim Nagar, Alambagh, Lucknow, Uttar Pradesh 226005</a>
+                            <a href="https://maps.app.goo.gl/eiZbQguZSWHpjojg6" target="_blank" class="text-white mt-2 d-block">2.ASHRAM BAZAR, DISTRICT HOSPITAL ROAD, near SS COLLAGE, Shahjahanpur, Uttar Pradesh 242001</a>
                         </div>
                     </div>
                    </div>
@@ -493,7 +743,10 @@
         </div>
     </section>
     <!--============================== FOOTER AREA START ================================-->
-
+    <div class="Whatsupbuttn" style="width:70px;">
+        <a href="https://api.whatsapp.com/send?phone=9695291744" style="float:right;" target="_blank">
+            <img src="./images/whatsapp.png" alt="SMS NOW" title="SMS NOW" style="height: 50px; margin-right: 0px; float: left;"> </a>
+     </div>
     <!--================================== POPUP FORM END ==========================================-->
     <!-- JQUERY LIBRARY -->
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
@@ -524,6 +777,45 @@
     <script src="js/vendor/popup/jquery.popupoverlay.js"></script>
     <!-- RETINA JS FILES -->
     <script type="text/javascript" src="js/vendor/retina.js"></script>
+
+
+    <script>
+     document.addEventListener("DOMContentLoaded", function() {
+    const openFormBtns = document.querySelectorAll('.openFormBtn');
+    const popupForm = document.getElementById('popupForm');
+    const thankYouMessage = document.getElementById('thankYouMessage');
+    const closeBtn = document.querySelector('.closeBtn');
+    const form = document.getElementById('form');
+
+    openFormBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            popupForm.style.display = 'block';
+            document.body.style.overflow="hidden"
+        });
+    });
+
+    closeBtn.addEventListener('click', function() {
+        popupForm.style.display = 'none';
+        document.body.style.overflow="auto"
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == popupForm) {
+            popupForm.style.display = 'none';
+        }
+    });
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        popupForm.style.display = 'none';
+        thankYouMessage.style.display = 'block';
+        setTimeout(function() {
+            thankYouMessage.style.display = 'none';
+        }, 3000);
+    });
+});
+
+    </script>
 </body>
 
 </html>

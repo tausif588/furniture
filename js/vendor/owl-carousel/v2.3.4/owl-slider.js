@@ -33,6 +33,34 @@ $(document).on('ready', function() {
     });
 
 
+
+    var owl1 = $("#my_carousel_2"); //my carousel is user defind
+    owl1.owlCarousel({
+        nav: false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        dots: true,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+
+            992: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+
+
+
     // Custom Navigation Events
     $(".next").click(function() {
         owl.trigger('owl.next');

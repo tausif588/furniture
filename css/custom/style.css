@@ -54,7 +54,6 @@ body {
     font-weight: 400;
     line-height: 24px;
     margin: 0 auto;
-    max-width: 1500px;
 }
 
 p {
@@ -164,7 +163,7 @@ h6 {
     bottom: 30px;
     width: 50px;
     height: 50px;
-    background-color: #1f3d9d;
+    background-color: #dc3545;
     color: #ffffff;
     text-align: center;
     line-height: 50px;
@@ -536,13 +535,13 @@ h6 {
     color: #222222 !important;
 }
 
-.boxed-btn:hover {
+/* .boxed-btn:hover {
     background-color: transparent;
     color: #222222 !important;
     border: 1px solid #fff !important;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
-}
+} */
 
 .boxed-btn-1:hover {
     background-color: #dc3545 !important;
@@ -871,7 +870,9 @@ button:focus {
 #my_carousel_1 .owl-dots {
     display: none !important;
 }
-
+#my_carousel_2 .owl-dots {
+    display: none !important;
+}
 /*============================== 11.CONTACT FORM  END ==================================*/
 
 /*======================================= 12.FOOTER AREA START =====================================*/
@@ -1212,11 +1213,14 @@ p a {
 
 .item-box{
    /* border: 1px solid #dc3545; */
-   padding: 5px ;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   padding: 15px 10px ;
+   background-color: #fff;
 }
 
 .item-box img {
-    width: 100%;
+    width: 100% !important;
+    cursor: pointer !important;
 }
 
 .item-box .content {
@@ -1224,13 +1228,14 @@ p a {
 }
 
 .item-box .content .title {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .item-box .content 
  .name {
-    font-size: 17px;
+    font-size: 13px;
     color: #000;
+    font-weight: 600;
 }
 
 .item-box .content 
@@ -1299,7 +1304,9 @@ p a {
     color:gold;
   }
 /* Card end */
-
+.owl-carousel {
+    z-index: 0 !important;
+}
 .contact-form{
     padding: 20px 20px;
     border: 2px solid #dc3545;
@@ -1317,6 +1324,175 @@ p a {
 }
 
 
+/* popup start */
+
+
+#openFormBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-content h2{
+    text-align: center;
+    color: #dc3545;
+}
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: end;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #dc3546e6;
+}
+
+/* popup end */
+
+
+/* Animation Button */
+.glow-on-hover {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+.Whatsupbuttn{
+    position: fixed;
+    left: 10px;
+    bottom: 30px;
+    height: auto;
+    background: #9990;
+    z-index: 1001;
+}
+
+.contact-form h3 {
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.contact-form  p {
+    font-size: 15px;
+    color: #dc3545;
+    font-weight: 500;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Animation Button */
+
+
 @media screen and (max-width:992px) {
     .branches{
         width: 100%;
@@ -1330,7 +1506,9 @@ p a {
     }
 }
 @media screen and (max-width:568px) {
-
+    .contact-form h3 {
+        font-size: 22px;
+    }
     .navbar-nav li {
         padding-right: 10px;
         
