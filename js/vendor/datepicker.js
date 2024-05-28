@@ -1,1 +1,1 @@
-No Content: https://www.pennyblacktemplates.com/demo/ws/furniture/js/vendor/datepicker.js
+// No Content: https://www.pennyblacktemplates.com/demo/ws/furniture/js/vendor/datepicker.js

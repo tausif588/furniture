@@ -206,3 +206,37 @@ $(document).ready(function() {
     return false;
     // End of use strict
 });
+
+function sendMail(form){
+    let parms ={};
+    form.querySelectorAll('input').forEach((el)=>{
+        parms[el.name]=el.value;
+    })
+    emailjs.send("service_c1erd2c","template_cqbghrp",parms)
+    .then((res)=>{
+        document.getElementById("thankYouMessage").style.display = 'block';
+        setTimeout(()=>{
+            document.getElementById("thankYouMessage").style.display = 'none';
+            location.reload();
+        },3000)
+      
+        
+    }).catch(e=>{
+        alert("Failed!")
+    })
+    setTimeout(()=>{
+        document.getElementById("popupForm").style.display = 'none';
+    },1000)
+    
+}
+const serviceId ="service_4pucuss";
+const templateId ="template_jsrts5y";
+
+document.getElementById('main_form').addEventListener('submit', function (e){
+    e.preventDefault();
+    sendMail(this);
+})
+document.getElementById('popup_form').addEventListener('submit', function (e){
+    e.preventDefault();
+    sendMail(this);
+})

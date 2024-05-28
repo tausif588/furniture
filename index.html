@@ -25,6 +25,23 @@
     <link rel="stylesheet" type="text/css" href="css/vendor/magnific/magnific-popup.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" type="text/css" href="css/custom/style.css">
+
+
+    <!-- .EMAIl-->
+
+    <!-- Attari@123 -->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "wUXsrC3T4hSZ737x4",
+      });
+   })();
+</script>
+
 </head>
 
 <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="100">
@@ -32,17 +49,50 @@
     <!-- Start Popup -->
     <div id="popupForm" class="modal popupForm">
         <div class="modal-content">
-            <span class="closeBtn">&times;</span>
-            <form  action="https://api.web3forms.com/submit" method="POST">
+            <span class="closeBtn mb-3">&times;</span>
+            <!-- <form  action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="bcd607ed-954b-49ad-b048-64e4547239a2">
                 <h2>Order Your Furniture</h2>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="Name" autocomplete="off" required>
                 <label for="phone">Phone:</label>
                 <input type="text" id="phone" name="Phone" autocomplete="off" required>
-                <label for="enquiry">Enter Enquiry</label>
-                <textarea type="text" id="enquiry" name="Message" rows="4" autocomplete="off"></textarea>
-                <button class="w-100 mt-3" type="submit">Submit</button>
+              
+                <button class="w-100 mt-3 mb-4" type="submit">Submit</button>
+            </form> -->
+            <form action="" class="contact-form" id="popup_form">
+                <h3 class="mb-0">Download Product Catalogue Here</h3>
+                <p>We Will Send You The Catalogue On Your WhatsApp Number</p>
+                <div class="marg-top20 mt-4">
+                    <div class="">
+                        <div>
+                            <div class="form-div text-center">
+                                <input type="text" class="form-control form-input" id="name" placeholder="Name" name="name" autocomplete="off" required="">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="marg-top30 mt-4">
+                    <div class="">
+                        <div class="form-div">
+                            <input type="text" class="form-control form-input number-css" placeholder="WhatsApp Number" name="phone" id="phonenumber" autocomplete="off" required="">
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- <div class="form-div marg-top30">
+
+                    <textarea class="form-control form-comment-height form-message " rows="2"
+                        placeholder="Enter Enquiry" id="comment" name="Message" autocomplete="off" ></textarea>
+                </div> -->
+                <div class="padding-top30 text-align">
+                    <button class="boxed-btn" type="submit" >Submit</button>
+                </div>
+    
+
             </form>
         </div>
     </div>
@@ -159,26 +209,25 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6  col-12 order-1 order-md-2">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                        <input type="hidden" name="access_key" value="bcd607ed-954b-49ad-b048-64e4547239a2">
-                        <h3 class="mb-0">Get Our Latest Catalogue</h3>
-                        <p>Receive it on WhatsApp. Provide a valid number</p>
-                        <div class="marg-top20 mt-3">
+                    <form id="main_form" class="contact-form">
+                        <h3 class="mb-0">Download Product Catalogue Here</h3>
+                        <p>We Will Send You The Catalogue On Your WhatsApp Number</p>
+                        <div class="marg-top20 mt-4">
                             <div class="">
                                 <div>
                                     <div class="form-div text-center">
                                         <input type="text" class="form-control form-input" id="name"
-                                            placeholder="Name" name="Name" autocomplete="off" required>
+                                            placeholder="Name" name="name" autocomplete="off" required>
                                     </div>
                                 </div>
                             </div>
                            
                         </div>
-                        <div class="">
+                        <div class="marg-top30 mt-4">
                             <div class="">
                                 <div class="form-div">
                                     <input type="text" class="form-control form-input number-css"
-                                        placeholder="Phone Number" name="Phone" id="phonenumber" autocomplete="off"
+                                        placeholder="WhatsApp Number" name="phone" id="phonenumber" autocomplete="off"
                                         required />
 
                                 </div>
@@ -186,13 +235,13 @@
                             
                         </div>
 
-                        <div class="form-div marg-top30">
+                        <!-- <div class="form-div marg-top30">
 
                             <textarea class="form-control form-comment-height form-message " rows="2"
                                 placeholder="Enter Enquiry" id="comment" name="Message" autocomplete="off" ></textarea>
-                        </div>
+                        </div> -->
                         <div class="padding-top30 text-align">
-                            <button class="boxed-btn" type="submit">SUBMIT</button>
+                            <button class="boxed-btn" type="submit">Download Now</button>
                         </div>
 
                         <div class="messageDiv text-center"> <span class="successMessage"> </span> <span
@@ -807,14 +856,14 @@
         }
     });
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        popupForm.style.display = 'none';
-        thankYouMessage.style.display = 'block';
-        setTimeout(function() {
-            thankYouMessage.style.display = 'none';
-        }, 3000);
-    });
+    // form.addEventListener('submit', function(event) {
+    //     event.preventDefault();
+    //     popupForm.style.display = 'none';
+    //     thankYouMessage.style.display = 'block';
+    //     setTimeout(function() {
+    //         thankYouMessage.style.display = 'none';
+    //     }, 3000);
+    // });
 });
 
     </script>
